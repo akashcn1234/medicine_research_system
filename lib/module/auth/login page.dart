@@ -14,11 +14,6 @@ class logsign extends StatelessWidget {
         backgroundColor: Colors.transparent,
         body: Stack(
           children: [
-
-
-
-
-
             Container(
                 decoration: BoxDecoration(
                     image: DecorationImage(
@@ -72,11 +67,14 @@ class logsign extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text(
-                                'LOG IN',
-                                style: TextStyle(
-                                    fontSize: 27, fontWeight: FontWeight.w700),
-                              ),
+                              Center(
+                                child: SizedBox(
+                                  width: 250,
+                                  child: ElevatedButton(onPressed: () {
+
+                                  }, child: Text("LOG IN")),
+                                ),
+                              )
                             ],
                           ),
                           SizedBox(
@@ -90,28 +88,18 @@ class logsign extends StatelessWidget {
                                   Navigator.pushNamed(context, 'register');
                                 },
                                 child: Text(
-                                  'LOG IN',
+                                  'Dont have an account?Register',
                                   textAlign: TextAlign.left,
                                   style: TextStyle(
                                       decoration: TextDecoration.underline,
                                       fontWeight: FontWeight.bold,
                                       color: Colors.black,
-                                      fontSize: 18),
+                                      fontSize: 15),
 
                                 ),
                                 style: ButtonStyle(),
                               ),
-                              TextButton(
-                                  onPressed: () {},
-                                  child: Text(
-                                    'Forgot Password?',
-                                    style: TextStyle(
-                                      decoration: TextDecoration.underline,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.black,
-                                      fontSize: 18,
-                                    ),
-                                  )),
+
                             ],
                           )
                         ],
