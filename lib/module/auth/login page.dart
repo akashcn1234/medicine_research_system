@@ -14,6 +14,11 @@ class logsign extends StatelessWidget {
         backgroundColor: Colors.transparent,
         body: Stack(
           children: [
+
+
+
+
+
             Container(
                 decoration: BoxDecoration(
                     image: DecorationImage(
